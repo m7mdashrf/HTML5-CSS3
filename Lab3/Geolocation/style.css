@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --borderRad: 15px
+}
+
+.container {
+    width: 80%;
+    height: 85vh;
+    border: 3px solid black;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: var(--borderRad);
+}
+
+.buttonsBar {
+    width: 90%;
+    height: 15vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRad);
+}
+
+.showBox {
+    width: 90%;
+    min-height: 55vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderRad);
+}
+
+button {
+    padding: 10px 25px;
+    margin-left: 25px;
+    border: none;
+    background-color: brown;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .5s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(106, 92, 238);
+    color: white;
+}
+
+
+/* information container */
+
+.informationContainer {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.informationContainer div {
+    width: 45%;
+    height: 22vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background: rgba( 19, 166, 247, 0.55);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 9px);
+    -webkit-backdrop-filter: blur( 9px);
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    user-select: none;
+}
+
+.informationContainer h3 {
+    padding: 10px;
+    color: white;
+}
+
+.informationContainer section {
+    flex: 1 1 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informationContainer section p {
+    padding: 10px 10px;
+    color: lightslategrey;
+    font-size: 19px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#mapArea {
+    width: 100%;
+    height: 100%;
+}

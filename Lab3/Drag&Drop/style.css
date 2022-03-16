@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --borderRad: 20px
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+    width: 80%;
+    margin: 25px auto;
+    height: 70vh;
+    border-radius: var(--borderRad);
+    box-shadow: 5px 5px 15px black;
+}
+
+.gallary {
+    border: 2px solid black;
+    width: 90%;
+    height: 40%;
+    border-radius: var(--borderRad);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s;
+}
+
+.dropArea {
+    border: 2px solid black;
+    width: 90%;
+    height: 40%;
+    border-radius: var(--borderRad);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    display: block;
+    width: 15%;
+    height: 90%;
+    border: 2px solid brown;
+    border-radius: var(--borderRad);
+    transition: all 1s;
+}
+
+img:hover {
+    animation: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

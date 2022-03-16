@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>geolocation app</title>
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxs4CjOh5QuPxRRcKG_Y6QCCBGBqX9Wno"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttonsBar">
+            <button id="map">Display Map</button>
+            <button id="information">Detalied information</button>
+        </div>
+        <div class="showBox">
+            <div id="mapArea">
+            </div>
+            <div class="informationContainer">
+                <div>
+                    <h3>Latitude</h3>
+                    <section><p id="lat">X</p></section>
+                </div>
+                <div>
+                    <h3>Longtiude</h3>
+                    <section><p id="long">X</p></section>
+                </div>
+                <div>
+                    <h3>Accurcy</h3>
+                    <section><p id="accurcy">X</p></section>
+                </div>
+                <div>
+                    <h3>Time</h3>
+                    <section><p id="TimeStamp">X</p></section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

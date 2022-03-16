@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#toolbar {
+    display: flex;
+    position: fixed;
+    background-color: rgb(29, 26, 26);
+    color: white;
+    font: bold 15px tahoma;
+    width: 100%;
+    /* justify-content: center; */
+    height: 20%;
+    align-items: center;
+}
+
+#radiusbar {
+    /* border: 2px solid red; */
+    padding: 10px;
+    width: 200px;
+}
+
+.incredecre,
+#radiusvalue,
+#savebtn {
+    /* border: 2px solid red; */
+    padding: 8px;
+    /* margin-left: 20px; */
+    border-radius: 50%;
+    box-shadow: red 5px 5px 10px inset, blue -5px -5px 10px inset;
+}
+
+.incredecre:hover,
+#savebtn:hover {
+    cursor: pointer;
+    box-shadow: blue -5px -5px 10px inset, red 5px 5px 10px inset;
+}
+
+#savebar {
+    width: 25%;
+    margin-left: 10%;
+}
+
+#savebtn {
+    margin-left: 250px;
+}
+
+#colorsbar {
+    /* border: 2px solid red; */
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.active {
+    border: 2px white solid;
+}
